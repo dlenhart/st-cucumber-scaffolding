@@ -1,0 +1,13 @@
+source 'http://rubygems.org'
+
+gem 'cucumber'
+gem 'bundler'
+gem 'rspec'
+gem 'ffi'
+gem 'colorize'
+gem 'watir'
+gem 'selenium-webdriver'
+gem 'headless'
+gem 'json'
+gem 'gherkin'
+gem 'syntax'
