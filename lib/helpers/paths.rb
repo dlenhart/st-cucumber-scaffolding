@@ -7,7 +7,7 @@ module Helpers
     def self.create
       %w[reports screenshots].each do |word|
         Nenv.instance.create_method("#{word.to_sym}_dir") do |_x|
-          word.upcase.to_s
+          File.join(File.dirname(__FILE__), '../..', "#{word}")
         end
       end
     end

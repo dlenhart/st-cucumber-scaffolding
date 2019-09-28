@@ -3,6 +3,8 @@
 # Nenv vars
 require 'nenv'
 
+# Create environment variables used throughout the suite
+# Update as needed
 module Helpers
   DEFAULT_ENV     =     'test'
   DEFAULT_BROWSER =     'chrome'
@@ -16,5 +18,7 @@ module Helpers
   }.freeze
 
   Nenv.instance.create_method(:env) { |_v| ENV['TEST_ENV'] || DEFAULT_ENV }
-  Nenv.instance.create_method(:url) { |_v| ENV_URL[Nenv.env.to_sym] || DEFAULT_URL }
+  Nenv.instance.create_method(:url) do |_v|
+    ENV_URL[Nenv.env.to_sym] || DEFAULT_URL
+  end
 end
