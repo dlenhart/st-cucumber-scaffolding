@@ -14,6 +14,6 @@ require 'helpers/paths'
 
 # Helpers
 
-def Test
+def test_func
   puts 'from test'
 end
