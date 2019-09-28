@@ -1,0 +1,11 @@
+#Cucumber options
+
+local: TEST_ENV=local
+ci: TEST_ENV=ci
+dev: TEST_ENV=dev
+test: TEST_ENV=test
+
+desktop:
+browser: chrome
+
+default: -f pretty -f html -o reports/report.html
