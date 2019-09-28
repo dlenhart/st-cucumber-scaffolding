@@ -9,10 +9,11 @@ require 'pry'
 
 # internal libs
 require 'pages'
+require 'vars'
 require 'helpers/paths'
 
 # Helpers
 
 def Test
-  puts "from test"
+  puts 'from test'
 end

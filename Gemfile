@@ -1,10 +1,13 @@
+# frozen_string_literal: true
+
 source 'http://rubygems.org'
 
-gem 'cucumber'
 gem 'bundler'
-gem 'rspec'
 gem 'colorize'
-gem 'watir'
-gem 'json'
+gem 'cucumber'
 gem 'gherkin'
+gem 'json'
 gem 'nenv'
+gem 'pry'
+gem 'rspec'
+gem 'watir'

@@ -9,3 +9,5 @@ desktop:
 browser: chrome
 
 default: -f pretty -f html -o reports/report.html
+headless: --headless
+retry: --retry 2
