@@ -6,3 +6,4 @@ Background:
 
 Scenario: Login without email
   When enter blank details for Register
+  Then the validation message should appear

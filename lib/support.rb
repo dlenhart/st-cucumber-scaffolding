@@ -5,16 +5,16 @@ require 'rubygems'
 require 'rspec'
 require 'watir'
 require 'nenv'
+require 'page-object'
 require 'pry'
 require 'facets'
 
 # internal libs
 require 'vars'
-require 'pages'
+require_relative 'pages'
 
 # Helpers
-require 'helpers/paths'
-
+require_relative 'helpers/paths'
 
 def test_func
   puts 'from test'
